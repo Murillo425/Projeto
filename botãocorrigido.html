@@ -1,0 +1,85 @@
+<!DOCTYPE html> <lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Filmes</title>
+</head>
+<body>
+      SISTEMA DE FILMES
+    <form>
+        <fieldset>
+            <legend>Pesquisar filme</legend>
+            <h1>Selecione Filme</h1>
+            <p>os campos obrigatorios são seguidos de <abbr title="required">*</abbr>.</p>
+        <ul>
+            <li>
+            
+                <label for="opção" >
+                    <h4><span>Opção de filme:</span></h4>
+                </label><br>
+                <select id="opção" opção="user_opção">
+                    <option value="ação">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="comédia">Comédia</option>
+                    <option value="comédia romantica">Comédia Romântica</option>
+                    <option value="desenho">Desenho</option>
+                    <option value="ficção">Ficção</option>
+                    <option value="romance">Romance</option>
+                </select><br>
+                <br>
+
+                <div>         
+                <h4><label for='user_name'>Nome:<abbr title="required" aria-label="required">*</abbr></label><br></h4>
+                <input type='name' id="name" name="user_name"/>
+                
+                </div>
+            </li>
+            <br>
+            <li>   
+                <label for='recomendação'>
+                    <h4><sapan>Recomendação</sapan></h4>  
+                </label><br>
+                <select id="recomendado" recomendado="user_recomendação">
+                    <option value="livre">Livre</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="18">18</opotion>
+                </select>
+            </li>
+            <br>
+            <li>
+                <h4><label for='sinopse'>Sinopse:</label><br></h4>
+                <textarea  id="sinopse" sinopse="user_sinopse"></textarea>
+            </li>
+            <br> 
+            <li>
+                <h4><label for='duração'>Duração:</label><br></h4>
+                <input type='text' id="duração" duração="user_duração"/>
+            </li>
+            <br>
+            <li>
+                <h4><label for='diretor'>Diretor:</label><br></h4>
+                <input type='text' id="diretor" diretor="user_diretor"/>
+            </li>
+            <br>
+            <li>
+                <h4><label for='elenco'>Elenco:</label><br></h4>
+                <textarea  id="elenco" elenco="user_elenco"></textarea>
+            </li>
+            <br>
+            <li>
+                <h4><label for='classificação'>Classificação:</label><br></h4>
+                <input type='number' id="classificação" classificação="user_classificação"/>
+            </li>
+            <section>
+                <p>
+                    <button type="submit">Pesquisar filme</button>
+                </p>
+            </section>
+        </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
